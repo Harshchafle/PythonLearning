@@ -48,7 +48,7 @@
 
 # print(len(("disco",10,1.2, "hard rock",10)))
 
-
+# looping statements
 # for (x) in range(0,3):{
 #     print(x)
 # }
@@ -112,3 +112,5 @@
 # a = np.array([0,1])
 # b = np.array([1,0])
 # np.dot(a,b) 
+
+
