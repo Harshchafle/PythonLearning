@@ -1,0 +1,436 @@
+Microsoft Windows [Version 10.0.22631.4751]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\chafl>python3
+Python 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2+4j
+(2+4j)
+>>>  j = 4+9j
+  File "<python-input-1>", line 1
+    j = 4+9j
+IndentationError: unexpected indent
+>>> a = 2+2j
+>>> a
+(2+2j)
+>>> v = 4+2j
+>>> v
+(4+2j)
+>>> a*v
+(4+12j)
+>>> 0o90
+  File "<python-input-7>", line 1
+    0o90
+      ^
+SyntaxError: invalid digit '9' in octal literal
+>>> 0o20
+16
+>>> a = 8
+>>> a
+8
+>>> 0ba
+  File "<python-input-11>", line 1
+    0ba
+     ^
+SyntaxError: invalid binary literal
+>>> 0b7
+  File "<python-input-12>", line 1
+    0b7
+      ^
+SyntaxError: invalid digit '7' in binary literal
+>>> a = 10010
+>>> 0ba
+  File "<python-input-14>", line 1
+    0ba
+     ^
+SyntaxError: invalid binary literal
+>>> 0b00110
+6
+>>> x = 8
+>>> x << 1
+16
+>>> x>>1
+4
+>>> x>>1
+4
+>>> x>>1
+4
+>>> x<<1>>1>>1
+4
+>>> x<<1
+16
+>>> x = 7
+>>> x<<1
+14
+>>> setOne = {9,8,7,6}
+>>> stOne
+Traceback (most recent call last):
+  File "<python-input-26>", line 1, in <module>
+    stOne
+NameError: name 'stOne' is not defined. Did you mean: 'setOne'?
+>>> setOne
+{8, 9, 6, 7}
+>>> setOne
+{8, 9, 6, 7}
+>>> setOne
+{8, 9, 6, 7}
+>>> setTwo = {2,4,3,9,0}
+>>> setTwo
+{0, 2, 3, 4, 9}
+>>> setOne & setTwo
+{9}
+>>> setOne | setTwo
+{0, 2, 3, 4, 6, 7, 8, 9}
+>>> setOne - setTwo
+{8, 6, 7}
+>>> setOne + setTwo
+Traceback (most recent call last):
+  File "<python-input-35>", line 1, in <module>
+    setOne + setTwo
+    ~~~~~~~^~~~~~~~
+TypeError: unsupported operand type(s) for +: 'set' and 'set'
+>>> setOne == setTwo
+False
+>>> setOne >= setTwo
+False
+>>> setOne <= setTwo
+False
+>>> setOne < setTwo
+False
+>>> type({})
+<class 'dict'>
+>>> type({2,3})
+<class 'set'>
+>>> type(True == 0)
+<class 'bool'>
+>>> True == 0
+False
+>>> type("""false""")
+<class 'str'>
+>>> type(""false"")
+  File "<python-input-45>", line 1
+    type(""false"")
+         ^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> chai = "Normal_Chai"
+>>> chai[0]
+'N'
+>>> chai[-1]
+'i'
+>>> chai[-4]
+'C'
+>>> chai[0:5
+...
+KeyboardInterrupt
+>>> chai[0
+... :
+KeyboardInterrupt
+>>> chai[0:5]
+'Norma'
+>>> numList = [1,2,3,4,5,6,7,8,9,0]
+>>> nums[-1]
+Traceback (most recent call last):
+  File "<python-input-52>", line 1, in <module>
+    nums[-1]
+    ^^^^
+NameError: name 'nums' is not defined
+>>> numList[-1]
+0
+>>> numList[:]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+>>> numList[4:]
+[5, 6, 7, 8, 9, 0]
+>>> numList[:4]
+[1, 2, 3, 4]
+>>> numList[2:4]
+[3, 4]
+>>> numList[2:8:2]
+[3, 5, 7]
+>>> numList[2:8:1]
+[3, 4, 5, 6, 7, 8]
+>>> numList[2:8:3]
+[3, 6]
+>>> numList[2:8:4]
+[3, 7]
+>>> numList[2:8:5]
+[3, 8]
+>>> numList[2:8:6]
+[3]
+>>> numList[2:8:9]
+[3]
+>>> numList[2:8:-2]
+[]
+>>> chai
+'Normal_Chai'
+>>> print(chai.lower())
+normal_chai
+>>> print(chai.upper())
+NORMAL_CHAI
+>>> hey = "   mkdir   cd   "
+>>> hey
+'   mkdir   cd   '
+>>> hey.strip()
+'mkdir   cd'
+>>> hey.replace("mkdir", "hell")
+'   hell   cd   '
+>>> hey
+'   mkdir   cd   '
+>>> hey = hey.replace("mkdir", "hell")
+>>> hey
+'   hell   cd   '
+>>> string = "chai, biscuit, milk, doodh, khatam"
+>>> string
+'chai, biscuit, milk, doodh, khatam'
+>>> print(string.split(", ")
+...
+KeyboardInterrupt
+>>>  print(string.split(", "))
+  File "<python-input-78>", line 1
+    print(string.split(", "))
+IndentationError: unexpected indent
+>>>  print(string.split(", "))
+  File "<python-input-79>", line 1
+    print(string.split(", "))
+IndentationError: unexpected indent
+>>> print(string.split())
+['chai,', 'biscuit,', 'milk,', 'doodh,', 'khatam']
+>>> print(string.split(", "))
+['chai', 'biscuit', 'milk', 'doodh', 'khatam']
+>>> chai
+'Normal_Chai'
+>>> chai.find("Chai")
+7
+>>> chai.count("a")
+2
+>>> order = "I ordered {} cups of {} to taste"
+>>> order
+'I ordered {} cups of {} to taste'
+>>> order.format(2,chai)
+'I ordered 2 cups of Normal_Chai to taste'
+>>> flavor = "sugar"
+>>> chai+flavor
+'Normal_Chaisugar'
+>>> flavor.join(chai)
+'Nsugarosugarrsugarmsugarasugarlsugar_sugarCsugarhsugarasugari'
+>>> print(" ".join(chai))
+N o r m a l _ C h a i
+>>> cold = ["sprite", "thumbsUp", "mountailDeo"]
+>>> print(" ".join(cold))
+sprite thumbsUp mountailDeo
+>>> print("-".join(cold))
+sprite-thumbsUp-mountailDeo
+>>> len(chai)
+11
+>>> for letter in chai:
+...     print(letter)
+...
+N
+o
+r
+m
+a
+l
+_
+C
+h
+a
+i
+>>> path = "C:\user\chafle\bin"
+  File "<python-input-97>", line 1
+    path = "C:\user\chafle\bin"
+           ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \uXXXX escape
+>>> path = "C:\\user\\chafle\\bin"
+>>> path
+'C:\\user\\chafle\\bin'
+>>> print(path)
+C:\user\chafle\bin
+>>> pwd
+Traceback (most recent call last):
+  File "<python-input-101>", line 1, in <module>
+    pwd
+NameError: name 'pwd' is not defined. Did you forget to import 'pwd'?
+>>> chai = ["black", "milk", "green", "ginger", "ho\ney"]
+>>> chai
+['black', 'milk', 'green', 'ginger', 'honey']
+>>> print(chai)
+['black', 'milk', 'green', 'ginger', 'honey']
+>>> print(cahi[len(chai)-1]
+...
+KeyboardInterrupt
+>>>  print(cahi[len(chai)-1])
+  File "<python-input-105>", line 1
+    print(cahi[len(chai)-1])
+IndentationError: unexpected indent
+>>> print(cahi[len(chai)-1])
+Traceback (most recent call last):
+  File "<python-input-106>", line 1, in <module>
+    print(cahi[len(chai)-1])
+          ^^^^
+NameError: name 'cahi' is not defined
+>>> print(chai[len(chai)-1])
+honey
+>>> cahi.add("lemon")
+Traceback (most recent call last):
+  File "<python-input-108>", line 1, in <module>
+    cahi.add("lemon")
+    ^^^^
+NameError: name 'cahi' is not defined
+>>> chai.add("lemon")
+Traceback (most recent call last):
+  File "<python-input-109>", line 1, in <module>
+    chai.add("lemon")
+    ^^^^^^^^
+AttributeError: 'list' object has no attribute 'add'
+>>> chai.append("lemon")
+>>> chai
+['black', 'milk', 'green', 'ginger', 'honey', 'lemon']
+>>> chai[1:2]
+['milk']
+>>> chai[1:2] = "new"
+>>> chai
+['black', 'n', 'e', 'w', 'green', 'ginger', 'honey', 'lemon']                                                      >>>>>> chai = ["black", "milk", "green", "ginger", "honey"\]
+>>> chai
+['black', 'milk', 'green', 'ginger', 'honey']
+>>> chai[1:2] = ["new"]
+>>> chai
+['black', 'new', 'green', 'ginger', 'honey']
+>>> chai[1:2] = []
+>>> chai
+['black', 'green', 'ginger', 'honey']
+>>> for tea in chai:
+...     print(tea, "--")
+...
+black --
+green --
+ginger --
+honey --
+>>> for tea in chai:
+...     print(tea, end = "--")
+...
+>>> k--green--ginger--honey--
+>>> chai.popleft()
+Traceback (most recent call last):
+  File "<python-input-124>", line 1, in <module>
+    chai.popleft()
+    ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'popleft'
+>>> chai.remove("green")
+>>> chai
+['black', 'ginger', 'honey']
+>>> chai.insert(1, "green")
+>>> chai
+['black', 'green', 'ginger', 'honey']
+>>> range(10)
+range(0, 10)
+>>> print(range(10))
+range(0, 10)
+>>> sqNum  = [x**2 for x in range(10)]
+>>> sqNum
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> cubNum  = [x**3 for x in range(20)]
+>>> cubNum
+[0, 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 1331, 1728, 2197, 2744, 3375, 4096, 4913, 5832, 6859]
+>>> types = {str:"hello"}
+>>> types
+{<class 'str'>: 'hello'}
+>>> types.append(str:"another")
+  File "<python-input-137>", line 1
+    types.append(str:"another")
+                    ^
+SyntaxError: invalid syntax
+>>> types.append(str,"another")
+Traceback (most recent call last):
+  File "<python-input-138>", line 1, in <module>
+    types.append(str,"another")
+    ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+>>> types[str]
+'hello'
+>>> types.get(str)
+'hello'
+>>> types[str] = "another"
+>>> types
+{<class 'str'>: 'another'}
+>>> st = {"first":"Harsh", "second":"mayur, "th\ird":"akshat"}
+  File "<python-input-143>", line 1
+    st = {"first":"Harsh", "second":"mayur, "third":"akshat"}
+
+           ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> st = {"first":"Harsh", "second":"mayur", "t\
+ird":hird":"akshat"}
+>>> st
+{'first': 'Harsh', 'second': 'mayur', 'third': 'akshat'}
+>>> for s in st:
+...     print(s.value())
+...
+Traceback (most recent call last):
+  File "<python-input-146>", line 2, in <module>
+    print(s.value())
+          ^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+>>> for s in st:
+...     print(st.get(s))
+...
+Harsh
+mayur
+akshat
+>>> for s in st:
+...     print(s)
+...
+first
+second
+third
+>>> for key,values in st.items():
+...     print(key, values)
+...
+first Harsh
+second mayur
+third akshat
+>>> print(st.get("harsh")
+...
+...
+KeyboardInterrupt
+>>> if("first" in st):
+...     print("h")
+...
+h
+>>> st.pop()
+Traceback (most recent call last):
+  File "<python-input-151>", line 1, in <module>
+    st.pop()
+    ~~~~~~^^
+TypeError: pop expected at least 1 argument, got 0
+>>> st.pop("third")
+'akshat'
+>>> st
+{'first': 'Harsh', 'second': 'mayur'}
+>>> st.pop("second")
+'mayur'
+>>> st
+{'first': 'Harsh'}
+>>> st.popitem()
+('first', 'Harsh')
+>>> del st
+>>> st
+Traceback (most recent call last):
+  File "<python-input-158>", line 1, in <module>
+    st
+NameError: name 'st' is not defined
+>>> tup = ("hello", "name", "Nothing")
+>>> tup
+('hello', 'name', 'Nothing')
+>>> (black, green, red) = tup
+>>> hello
+Traceback (most recent call last):
+  File "<python-input-162>", line 1, in <module>
+    hello
+NameError: name 'hello' is not defined. Did you mean: 'help'?
+>>> black
+'hello'
+>>> green
+'name'
+>>> red
+'Nothing'
+>>>
